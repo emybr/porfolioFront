@@ -1,0 +1,174 @@
+.card {
+  max-width: 700px;
+  /* background-color: rgb(7 16 45); */
+  /* background: linear-gradient(to top right, rgb(7 16 45), rgb(9, 9, 9));
+  background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(21, 21, 23)); */
+  display: flex;
+  flex-direction: column;
+  padding: 27px;
+  border-radius: 20px;
+  border: 1px solid rgb(84 90 106);
+  box-shadow: 0 6px 6px -1px rgba(250, 246, 246, 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.small-text, .title,.desc {
+  font-weight: 600;
+}
+
+.title,.desc {
+  margin: 8px 0;
+}
+.perfil{
+  color: rgb(91, 87, 87);
+  font-size: 13px;
+}
+
+.small-text {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.desc {
+  color: rgb(151 153 167);
+  font-size: 12px;
+  
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.button:first-child {
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  background-color: #488aec;
+}
+
+.button:last-child {
+  box-shadow: 0 4px 6px -1px #0b162531, 0 2px 4px -1px #0e192b17;
+  background-color: #fff;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icon svg:last-child {
+  fill: #000
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.button-text span:first-child {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.google span:first-child {
+  color: rgb(219 206 253);
+}
+
+.apple span:first-child {
+  color: rgb(81 87 108);
+}
+
+.google span:last-child {
+  color: #fff;
+  font-weight: 800;
+}
+
+.apple span:last-child {
+  color: #000;
+  font-weight: 800;
+}
+
+.imgPerfil{
+  width: 300px;
+  border-radius: 5%;
+  margin-left: -8%;
+  margin-top: -9%;
+  opacity: 0.8;
+}
+
+.link-text {
+  text-decoration: none;
+  color: #b90909c2;
+}
+
+.imgTecnologias{
+  margin: 3px;
+}
+
+.contenedorImgTecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contenedorHederCar1{
+  display: flex;
+  justify-content: space-between;
+}
+.contenedorSocial{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.nombre{
+  margin-right: 4px;
+  
+}
+
+.contenedorNombreApellido{
+  display: flex;
+  justify-content: space-between;
+}
+
+.parrafo1{
+  color: white;
+  font-size: 40px;
+}
+
+.contenedorPerfil{
+  margin-top: -3%;
+  margin-left: -72%;
+}
+
+.parrafo2{
+  color: rgb(180, 176, 176);
+  font-size: 18px;
+  margin-top: -3%;
+  margin-left: 4.2%;
+  text-align: left;
+}
