@@ -9,11 +9,10 @@ const Card = ({ data }) => {
     const { nombre, apellido, descripcion, photosPerfil } = data;
     console.log(data?.nombre);
     // Verifica si data.img y data.titulo existen antes de mostrarlos
-    const showImage = data && data.img ? <img className='imgPerfil' src={data?.img} alt="imagen de Emiliano" /> : null;
-
+    const showImage =  data.img ? <img className='imgPerfil' src={data?.img} alt="imagen de Emiliano"></img> : null;
     const showTitulo = data.nombre ? <span className="small-text">{data.nombre}</span> : null;
     const showTitulo2 = data.apellido ? <span className="small-text">{data.apellido}</span> : null;
-    const showTitulo3 = data.descripcion ? <span className="desc">{data.descripcion}</span> : null;
+    const showTitulo3 = data.descripcion ? <span >{data.descripcion}</span> : null;
     const showTitulo4 = data.perfil ? <span className="perfil">{data.perfil}</span> : null;
     const showTitulo6 = data.email ? <span className="small-text">{data.email}</span> : null;
     // const showImgTecnologias = data.imgTecnologias ? <img className='imgTecnologias' src={data?.imgTecnologias} alt="imagen de tecnologias" /> : null;
@@ -24,19 +23,25 @@ const Card = ({ data }) => {
             <img key={index} className='imgTecnologias' src={url} alt={`imagen de tecnología ${index}`} />
         ))
     ) : null;
-    const showTituloImgTecnologias = data?.imgTecnologias ? <span className="title">{data.titulo}</span> : null;
+    const showTituloImgTecnologias = data?.imgTecnologias ? <span >{data.titulo}</span> : null;
     const renderGitHub = data.nombre ? (
         <BotonGithub />) : null;
     const renderLinkedinButton = data.linkedin ? (
         <BotonLinkedin />) : null;
-
     const parrafo1 = data.nombre ? (
-        <p>Passionate to pursue the technology.</p>
+        // <p>Passionate to pursue the technology.</p>
+        <p>{data.textoDescripcionTitulo}</p>
     ) : null;
     const parrafo2 = data.nombre ? (
-        <p>I enjoy learning new things and try to overcome new
-            challenges while analyzing how I improved through them.</p>
+        // <p>I enjoy learning new things and try to overcome new
+        //     challenges while analyzing how I improved through them.</p>
+        <p >{data.textoDescripcion}</p>
     ) : null;
+    const titutoDescripcion = data.descripcion ? (
+        <p>{data.tituloDescripcion}</p>
+    ) : null;
+    const imgEvent = data.imgevent ? <img className='imgEvent' src={data?.imgevent} alt="" />:null;
+    
 
 
     return (
@@ -59,27 +64,44 @@ const Card = ({ data }) => {
                     </div>
                 </div>
             </div>
+            
             <div className='contenedorPerfil'>
                 {showTitulo4}
             </div>
             {showImage && showImage}
-            {showTitulo3}
             <div>
                 <div className='parrafo1'>
                     {parrafo1}
                 </div>
                 <div className='parrafo2'>
-                {parrafo2}
-
+                    {parrafo2}
                 </div>
 
-            
+            <div className='contenedorCard3'>
+                <div className='tituloDescripcion'>
+                    {titutoDescripcion}
+                </div>
+                <div className='descipcionSobreMi'>
+                    {showTitulo3}
+                </div>
             </div>
-            {showImgTecnologias && showTituloImgTecnologias}
-            <div className='contenedorImgTecnologias'>
-                {showImgTecnologias && showImgTecnologias}
+
             </div>
-            {/* <span className="desc">Download Lorem mobile banking app for IOS &amp; Android to manage your online money.</span> */}
+                <div className='contenedorcard4'>
+                    <div className='tituloTecnologia'>
+                        {showImgTecnologias && showTituloImgTecnologias}
+                    </div>
+                    <div className='contenedorImgTecnologias'>
+                        {showImgTecnologias && showImgTecnologias}
+                    </div>
+            </div>
+
+            <div className='contenedorCard5'>
+                <div className='imgEvent'>
+                    {imgEvent && imgEvent}
+                </div>
+            </div>
+
         </div>
     );
 };

@@ -7,7 +7,7 @@
   flex-direction: column;
   padding: 27px;
   border-radius: 20px;
-  border: 1px solid rgb(84 90 106);
+  border: 2px solid rgb(84, 92, 112);
   box-shadow: 0 6px 6px -1px rgba(250, 246, 246, 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
@@ -19,7 +19,7 @@
   margin: 8px 0;
 }
 .perfil{
-  color: rgb(91, 87, 87);
+  color: rgb(170, 163, 163);
   font-size: 13px;
 }
 
@@ -28,17 +28,7 @@
   font-size: 20px;
 }
 
-.title {
-  color: #fff;
-  font-size: 26px;
-  line-height: 26px;
-}
 
-.desc {
-  color: rgb(151 153 167);
-  font-size: 12px;
-  
-}
 
 .buttons {
   display: flex;
@@ -111,11 +101,14 @@
 }
 
 .imgPerfil{
-  width: 300px;
-  border-radius: 5%;
-  margin-left: -8%;
-  margin-top: -9%;
-  opacity: 0.8;
+  width: 350px;
+  border-radius: 6%;
+  margin-left: -1%;
+  margin-top: -23%;
+  mask-image: linear-gradient(
+    black 80%,
+    transparent
+  );
 }
 
 .link-text {
@@ -131,7 +124,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 53px;
 }
 
 .contenedorHederCar1{
@@ -141,13 +134,13 @@
 .contenedorSocial{
   display: flex;
   justify-content: space-between;
-  
-  
+  margin-right: 7%;
+
 }
 
 .nombre{
   margin-right: 4px;
-  
+  margin-left: 20%;
 }
 
 .contenedorNombreApellido{
@@ -162,7 +155,7 @@
 
 .contenedorPerfil{
   margin-top: -3%;
-  margin-left: -72%;
+  margin-left: -64%;
 }
 
 .parrafo2{
@@ -171,4 +164,36 @@
   margin-top: -3%;
   margin-left: 4.2%;
   text-align: left;
+}
+
+.tituloDescripcion{
+  color: white;
+  font-size: 30px;
+}
+
+.descipcionSobreMi{
+  color: rgb(203, 199, 199);
+  text-align: justify;
+  font-weight: bold;
+}
+
+.tituloTecnologia{
+  color: rgb(167, 23, 23);
+  color: #fff;
+  font-size: 30px;
+  line-height: 26px;
+  margin-top: 6%;
+}
+
+.contenedorCard5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6%;
+}
+.imgEvent{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
 }

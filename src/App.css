@@ -6,5 +6,7 @@
   
 }
 
-body{
-  background: linear-gradient(to left, rgb(64, 5, 64), black);}
+body {
+  background-color: hsla(342, 80%, 8%, 1); 
+}
+
