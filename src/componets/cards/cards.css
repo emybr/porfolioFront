@@ -50,10 +50,21 @@
 
     .card:nth-child(6){
         width: 40%;
+        height: 400px;
         background-color: hsla(0, 0%, 4%, 0.208);
     }
 
+    .card:nth-child(7){
+        width: 90%;
+        height: auto;
+        background-color: hsla(342, 80%, 8%, 0.360);
+    }
 
+    .card:nth-child(8){
+        width: 25%;
+        height: 600px;
+    }
+    
     .video-background {
         position: fixed;
         top: 0;
@@ -66,13 +77,13 @@
     
     .video-background video {
         position: absolute;
-        top: 0; /* Inicio en la esquina superior */
-        left: 0; /* Inicio en la esquina izquierda */
-        width: 100vw; /* Ancho del video igual al ancho de la ventana del navegador */
-        height: 2000px; /* Alto del video igual al alto de la ventana del navegador */
-        object-fit: cover; /* Ajustar el video para cubrir todo el contenedor */
+        top: 0; 
+        left: 0; 
+        width: 100vw; 
+        height: 2000px; 
+        object-fit: cover; 
         z-index: -1;
         opacity: 0.5;
     }
     
-    
+  

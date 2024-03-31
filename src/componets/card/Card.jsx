@@ -9,7 +9,7 @@ const Card = ({ data }) => {
     const { nombre, apellido, descripcion, photosPerfil } = data;
     console.log(data?.nombre);
     // Verifica si data.img y data.titulo existen antes de mostrarlos
-    const showImage =  data.img ? <img className='imgPerfil' src={data?.img} alt="imagen de Emiliano"></img> : null;
+    const showImage = data.img ? <img className='imgPerfil' src={data?.img} alt="imagen de Emiliano"></img> : null;
     const showTitulo = data.nombre ? <span className="small-text">{data.nombre}</span> : null;
     const showTitulo2 = data.apellido ? <span className="small-text">{data.apellido}</span> : null;
     const showTitulo3 = data.descripcion ? <span >{data.descripcion}</span> : null;
@@ -25,7 +25,7 @@ const Card = ({ data }) => {
     ) : null;
     const showTituloImgTecnologias = data?.imgTecnologias ? <span >{data.titulo}</span> : null;
     const renderGitHub = data.nombre ? (
-        <BotonGithub />) : null;
+        <BotonGithub url={data.url} />) : null;
     const renderLinkedinButton = data.linkedin ? (
         <BotonLinkedin />) : null;
     const parrafo1 = data.nombre ? (
@@ -40,7 +40,34 @@ const Card = ({ data }) => {
     const titutoDescripcion = data.descripcion ? (
         <p>{data.tituloDescripcion}</p>
     ) : null;
-    const imgEvent = data.imgevent ? <img className='imgEvent' src={data?.imgevent} alt="" />:null;
+    const imgEvent = data.imgevent ? (
+        <a href={data.enlace}>
+            <img className='imgEvent' src={data?.imgevent} alt="" />
+        </a>
+    ) : null;
+    const tituloEvent = data.tituloEvent ? <p>{data.tituloEvent}</p> : null;
+    const textoEvent = data.textoEvent ? <p>{data.textoEvent}</p> : null;
+    const renderGitHubEvent = data.urlGit ? (
+        <BotonGithub url={data.urlGit} />) : null;
+    const tituloMemo = data.tituloMemo ? <p>{data.tituloMemo}</p> : null;
+    const textoMemo = data.textoMemo ? <p>{data.textoMemo}</p> : null;
+    const imgMemo = data.imgMemo ? (
+        <a href={data.enlaceMemo}>
+        <img className='imgMemo' src={data?.imgMemo} alt="imagen de memo" />
+        </a>
+    ) : null;
+    const renderGitHubMemo = data.urlGitMemo  ? (
+        <BotonGithub url={data.urlGitMemo } />) : null;
+    const imgMemo2 = data.imgMemo2  ? (
+        <a href={data.enlaceMemo2}>
+        <img className='imgMemo2' src={data?.imgMemo2} alt="imagen de memo" />
+        </a>
+    ) : null
+    const imgMemo3 = data.imgMemo3  ? (
+        <a href={data.enlaceMemo3}>
+        <img className='imgMemo3' src={data?.imgMemo3} alt="imagen de memo" />
+        </a>
+    ) : null
     
 
 
@@ -64,7 +91,7 @@ const Card = ({ data }) => {
                     </div>
                 </div>
             </div>
-            
+
             <div className='contenedorPerfil'>
                 {showTitulo4}
             </div>
@@ -77,32 +104,73 @@ const Card = ({ data }) => {
                     {parrafo2}
                 </div>
 
-            <div className='contenedorCard3'>
-                <div className='tituloDescripcion'>
-                    {titutoDescripcion}
+                <div className='contenedorCard3'>
+                    <div className='tituloDescripcion'>
+                        {titutoDescripcion}
+                    </div>
+                    <div className='descipcionSobreMi'>
+                        {showTitulo3}
+                    </div>
                 </div>
-                <div className='descipcionSobreMi'>
-                    {showTitulo3}
+
+            </div>
+            <div className='contenedorcard4'>
+                <div className='tituloTecnologia'>
+                    {showImgTecnologias && showTituloImgTecnologias}
+                </div>
+                <div className='contenedorImgTecnologias'>
+                    {showImgTecnologias && showImgTecnologias}
                 </div>
             </div>
 
-            </div>
-                <div className='contenedorcard4'>
-                    <div className='tituloTecnologia'>
-                        {showImgTecnologias && showTituloImgTecnologias}
-                    </div>
-                    <div className='contenedorImgTecnologias'>
-                        {showImgTecnologias && showImgTecnologias}
-                    </div>
-            </div>
 
             <div className='contenedorCard5'>
+                <div className='tiutloIconoCard5'>
+                    <div className='tituloEvent'>
+                        {tituloEvent}
+                    </div>
+                    <div className='botonEvent'>
+                        {renderGitHubEvent}
+                    </div>
+                </div>
+                <div className='textoEvent'>
+                    {textoEvent}
+                </div>
                 <div className='imgEvent'>
                     {imgEvent && imgEvent}
                 </div>
             </div>
 
+
+            <div className='contenedorCard7'>
+                </div>
+                    <div className='botonMemo'>
+                        {renderGitHubMemo}
+                    </div>
+                    <div className='tituloCard7'>
+                        {tituloMemo}
+                    </div>
+                    <div className='textoCard7'>
+                        {textoMemo}
+                    </div>
+                    <div className='contenedorImgCard7'>
+                        <div className='imgCard7'>
+                            {imgMemo && imgMemo}
+                        </div>
+                        <div className='imgCard7-2'>
+                            {imgMemo2 && imgMemo2}
+                        </div>
+                        <div className='imgCard7-3'>
+                            {imgMemo3 && imgMemo3}
+                        </div>
+                    </div>
+
+                <div>
+                    
+            </div>
         </div>
+
+
     );
 };
 

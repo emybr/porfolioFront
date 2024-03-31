@@ -189,11 +189,92 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 6%;
+  margin-top: -8%;
 }
+
+
+
+.tituloEvent{
+  color: rgb(167, 23, 23);
+  color: #fff;
+  font-size: 30px;
+  line-height: 26px;
+  margin-top: -6%;
+}
+.tiutloIconoCard5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.textoEvent{
+  color: rgb(170, 163, 163);
+  font-size: 14px;
+  text-align: justify;
+  font-weight: bold;
+  margin-top: -2%;
+}
+
 .imgEvent{
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
+  margin-top: 1%;
+}
+
+.botonEvent{
+  margin-left: 110px;
   
+}
+
+.tiutloIconoCard5{
+  margin-left: 30%;
+}
+
+.contenedorCard7{
+  margin-top: -4%;
+}
+
+.tituloCard7{
+  color: rgb(250, 246, 246);
+  font-size: 25px;
+  text-align: justify;
+  font-weight: bold;
+  margin-top: -9%;
+  margin-left: 40%;
+}
+
+.tiutloIconoCard7{
+  margin-left: 30px;
+}
+
+.textoCard7{
+  color: rgb(170, 163, 163);
+}
+
+.imgMemo{
+  width: 187px;
+  height: auto;
+  border-radius: 8%;
+  margin-top: 1%;
+}
+
+.botonMemo{
+  margin-top: 7%;
+  margin-left: 90%;
+}
+
+.contenedorImgCard7{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.imgMemo2{
+  width: 200px;
+  border-radius: 23px;
+}
+
+.imgMemo3{
+  width: 200px;
+  border-radius: 23px;
 }

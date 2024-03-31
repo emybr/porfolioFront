@@ -5,6 +5,8 @@ import cards from "../cards/cards.css";
 const Cards = () => {
   const [apiData, setApiData] = useState([]);
   console.log(apiData)
+  
+  
 
   const card1 = {
     nombre: apiData[0]?.nombre,
@@ -13,8 +15,10 @@ const Cards = () => {
     linkedin: apiData[0]?.linkedin,
     email: apiData[0]?.email,
     textoDescripcionTitulo:"Apasionado por seguir la tecnología.",
-    textoDescripcion: "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos,dando lo mejor de mi para lograr el mejor resultado posible."
+    textoDescripcion: "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos,dando lo mejor de mi para lograr el mejor resultado posible.",
+    url:"https://github.com/emybr"
   }
+
   const card2 = {
     img: apiData[0]?.photosPerfil[0]
   }
@@ -28,16 +32,42 @@ const Cards = () => {
   }
   
     const card5 = {
-    imgevent: apiData[0]?.photosTrabajos[0]
+    tituloEvent: "EVENTWAVE  ",
+    textoEvent: "UN ENTORNO DONDE PODRAS ENTERARTE DE LOS PROXIMOS EVENTOS",
+    imgevent: apiData[0]?.photosTrabajos[0],
+    enlace: "https://s12-02-m-node-react-gestor-de-eventos.vercel.app",
+    urlGit:"https://github.com/No-Country/s12-02-m-node-react?tab=readme-ov-file"
   }
 
   const card6 = {
-    img: apiData[0]?.photosPerfil[0]
+    tituloEvent: "CLON AIRBNB",
+    textoEvent: "UNA PLATAFORMA DIGITAL DEDICADA A LA OFERTA DE ALOJAMIENTOS",
+    imgevent: apiData[0]?.photosTrabajos[4],
+    enlace: "https://c14-02-m-node-react.vercel.app",
+    urlGit:"https://github.com/No-Country/c14-02-m-node-react?tab=readme-ov-file"
+  }
+
+  const card7 = {
+    tituloMemo: "APP MEMO",
+    textoMemo: "MEMO EN UNA EGNEDA DIGITAL PARA PERSONAS CON ESPECTRO AUTISTA",
+    imgMemo: "https://camo.githubusercontent.com/c7b0993acbf9c8c824313dd7a9f8658f7d1504ece71bd59d1390cff18f5c2af6/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f696d6167656e65732d6d656d6f2e61707073706f742e636f6d2f6f2f43617074757261253230646525323070616e74616c6c61253230323032342d30322d3133253230612532306c6128732925323032312e34362e33322e706e673f616c743d6d6564696126746f6b656e3d38663761366635362d633832382d343835642d393533632d323838386134336363363231",
+    imgMemo2: apiData[0]?.photosTrabajos[5],
+    imgMemo3: apiData[0]?.photosTrabajos[6],
+    enlace: "https://github.com/belugallardo/MemoReactNative",
+    urlGitMemo:"https://github.com/belugallardo/MemoReactNative"
+  }
+
+  const card8 = {
+    nombre: apiData[0]?.nombre,
+    apellido: apiData[0]?.apellido,
+    perfil: apiData[0]?.perfil,
+    email: apiData[0]?.email,
+    textoDescripcion: "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos,dando lo mejor de mi para lograr el mejor resultado posible.",
   }
 
   console.log("imagen tecnologias", card4)
   useEffect(() => {
-    fetch('http://localhost:3002/api/portfolio')
+    fetch('https://back-k9v5wxmcs-emybr.vercel.app/api/portfolio')
       .then(response => response.json())
       .then(data => {
         setApiData(data);
@@ -53,7 +83,6 @@ const Cards = () => {
         </video>
       </div>
 
-
       <div className='contenedor'>
         <Card data={card1} />
         <Card data={card2} />
@@ -61,6 +90,8 @@ const Cards = () => {
         <Card data={card4} />
         <Card data={card5} />
         <Card data={card6} />
+        <Card data={card7} />
+        <Card data={card8} />
       </div>
     </>
   );
