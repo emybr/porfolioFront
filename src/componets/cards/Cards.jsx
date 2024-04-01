@@ -67,7 +67,7 @@ const Cards = () => {
 
   console.log("imagen tecnologias", card4)
   useEffect(() => {
-    fetch('https://back-k9v5wxmcs-emybr.vercel.app/api/portfolio')
+    fetch('https://back-web-nine.vercel.app/api/portfolio')
       .then(response => response.json())
       .then(data => {
         setApiData(data);
