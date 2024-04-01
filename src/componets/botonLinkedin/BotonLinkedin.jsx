@@ -1,5 +1,5 @@
 import React from 'react';
-import './botonLinkedin.css';
+import './botonLinkedin1.css';
 
 function BotonLinkedin() {
     return (
