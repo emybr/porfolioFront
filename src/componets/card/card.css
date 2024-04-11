@@ -311,3 +311,22 @@
   margin-top: -24%;
   margin-left: 80%;
 }
+
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    height: auto;
+    
+  }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+  .imgMemo2,
+  .imgMemo3 {
+    display: none; /* Ocultar las imágenes en modo móvil */
+  }
+}
