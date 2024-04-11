@@ -58,10 +58,11 @@ const Cards = () => {
   }
 
   const card8 = {
-    nombre: apiData[0]?.nombre,
-    apellido: apiData[0]?.apellido,
-    perfil: apiData[0]?.perfil,
-    email: apiData[0]?.email,
+    tituloPython: "APP phython",
+    textoPython: "APP DE GESTION DE TAREAS",
+    imgPython: "https://firebasestorage.googleapis.com/v0/b/imagenes-memo.appspot.com/o/apppython.png?alt=media&token=33dd7193-8c4c-4a61-baef-888dfd3578ce",
+    imgPython2:"https://firebasestorage.googleapis.com/v0/b/imagenes-memo.appspot.com/o/appphython2.png?alt=media&token=2ae5b8e2-b31d-4bea-9df4-5853071eb5a1",
+    urlGitPython:"https://github.com/emybr/trabajoFinalPython.git",
     textoDescripcion: "Disfruto aprendiendo cosas nuevas e intento superar nuevos desafíos,dando lo mejor de mi para lograr el mejor resultado posible.",
   }
 

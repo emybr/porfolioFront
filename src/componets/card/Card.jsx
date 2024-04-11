@@ -69,6 +69,23 @@ const Card = ({ data }) => {
         </a>
     ) : null
     
+    const textoPython  = data.textoPython  ? <p>{data.textoPython}</p> : null
+    const imgPython  = data.imgPython  ? (
+        <a href={data.enlacePython}>
+        <img className='imgPython' src={data?.imgPython} alt="imagen de memo" />
+        </a>
+    ) : null
+    const imgPython2 = data.imgPython2  ? (
+        <a href={data.enlacePython2}>
+        <img className='imgPython' src={data?.imgPython2} alt="imagen de memo" />
+        </a>
+    ) : null
+
+    const renderGitHubPython = data.urlGitPython  ? (
+        <BotonGithub url={data.urlGitPython } />) : null
+    
+    const tituloPython  = data.tituloPython  ? <p>{data.tituloPython}</p> : null
+
 
 
     return (
@@ -167,6 +184,28 @@ const Card = ({ data }) => {
 
                 <div>
                     
+            </div>
+
+            <div className='contenedorCard8'>
+                <div className='tituloCard8'>
+                    {tituloPython}
+                </div>
+                <div className='botonPython'>
+                    {renderGitHubPython}
+                </div>
+                <div className='textoCard8'>
+                    {textoPython}
+                </div>
+                <div className='contenedorImgCard8'>
+                    <div className='imgCard8'>
+                        {imgPython && imgPython}
+                    </div>
+                </div>
+                <div>
+                    <div className='imgCard8-2'>
+                        {imgPython2 && imgPython2}
+                    </div>
+                </div>
             </div>
         </div>
 
