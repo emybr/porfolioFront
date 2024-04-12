@@ -7,8 +7,7 @@
   flex-direction: column;
   padding: 27px;
   border-radius: 20px;
-  border: 2px solid rgb(84, 92, 112);
-  box-shadow: 0 6px 6px -1px rgba(250, 246, 246, 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 6px 6px 1px rgba(250, 246, 246, 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .small-text, .title,.desc {
@@ -327,6 +326,35 @@
 @media only screen and (max-width: 600px) {
   .imgMemo2,
   .imgMemo3 {
-    display: none; /* Ocultar las imágenes en modo móvil */
+    display: none; 
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorSocial{
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorPerfil{
+    margin-left: -38%;
+    margin-top: -5%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .tituloTecnologia{
+    margin-top: -13%;
   }
 }
