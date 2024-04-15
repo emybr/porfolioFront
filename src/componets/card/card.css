@@ -134,6 +134,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 7%;
+  
 
 }
 
@@ -331,15 +332,24 @@
 }
 
 @media only screen and (max-width: 600px){
-  .contenedorSocial{
-    margin-top: 20%;
+  .contenedorNombreApellido{
+    margin-top: 28%;
+    margin-left: 7%;
+    
   }
 }
 
 @media only screen and (max-width: 600px){
   .contenedorPerfil{
-    margin-left: -38%;
-    margin-top: -5%;
+     margin-top: 3%;
+     margin-left: -3%;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .contenedorSocial{
+    margin-left: -13%;
   }
 }
 
@@ -354,7 +364,105 @@
 }
 
 @media only screen and (max-width: 600px){
+  .parrafo1{
+    margin-top: -6%;
+    
+  }
+}
+
+@media only screen and (max-width: 600px){
   .tituloTecnologia{
-    margin-top: -13%;
+    margin-top: -22%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .imgPerfil{
+    width: 250px;
+    border-radius: 6%;
+    margin-left: -1%;
+    margin-top: -17%;
+    mask-image: linear-gradient(
+      black 80%,
+      transparent
+    );
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorCard3{
+    margin-top: -40%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorCard5{
+    margin-top: -25%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .botonEvent{
+    margin-left: -18px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .tituloEvent{
+    margin-left: -18%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .tiutloIconoCard5{
+    margin-left: 11%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .tituloCard7{
+    margin-top: -26%;
+    margin-left: 22%;
+    margin-bottom: -10%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .botonMemo{
+    margin-top: -7%;
+    margin-left: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .imgCard7{
+    width: 200px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .contenedorCard8{
+    margin-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .tituloCard8{
+    margin-top: -9%;
+    margin-left: -27%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .botonPython{
+    margin-top: -28%;
+    margin-left: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .textoCard8{
+    margin-top: -10%;
   }
 }
